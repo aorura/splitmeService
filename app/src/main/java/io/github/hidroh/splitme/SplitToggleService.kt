@@ -9,7 +9,8 @@ import android.view.accessibility.AccessibilityEvent
 import androidx.localbroadcastmanager.content.LocalBroadcastManager
 
 class SplitToggleService : AccessibilityService() {
-  private val localBroadcastManager
+
+  val localBroadcastManager
     get() = LocalBroadcastManager.getInstance(this)
   private val receiver = object : BroadcastReceiver() {
     override fun onReceive(context: Context, intent: Intent) {

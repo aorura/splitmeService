@@ -5,4 +5,5 @@
     <string name="description">In order to toggle split screen, which is a system action, SplitMe must be granted Accessibility access. The only action that will be triggered by this service is toggling split screen.</string>
     <string name="summary">Toggle split screen</string>
     <string name="accessibility_required">Accessibility service is required for this setting. Enable it?</string>
+    <string name="split_button">Split-Windows</string>
 </resources>

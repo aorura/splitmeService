@@ -1,6 +1,7 @@
 package io.github.hidroh.splitme
 
 import android.accessibilityservice.AccessibilityServiceInfo.FEEDBACK_GENERIC
+import android.annotation.SuppressLint
 import android.app.AlertDialog
 import android.content.*
 import android.content.Intent.*
@@ -49,6 +50,7 @@ class SplitTileService : TileService() {
     updateTileState(isActive)
   }
 
+  @SuppressLint("StartActivityAndCollapseDeprecated")
   private fun toggleAndCollapse() {
     startActivityAndCollapse(Intent(this, InvisibleActivity::class.java)
         .setAction(ACTION_TOGGLE_SPLIT_SCREEN)
